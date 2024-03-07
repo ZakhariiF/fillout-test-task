@@ -1,0 +1,8 @@
+# .env file contains environment variables that may include sensitive information
+.env
+
+# dist folder can contain compiled or build files that should not be tracked
+dist/
+
+# node_modules folder contains all the npm packages and should not be committed
+node_modules/
