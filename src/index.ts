@@ -46,7 +46,7 @@ app.get("/:formId", async (req: Request, res: Response) => {
 
     const { responses } = await response.json();
 
-    let filteredSubmissions = filters
+    let filteredSubmissions = filters.length >= 1
       ? filterSubmissions(responses, filters)
       : responses;
 
